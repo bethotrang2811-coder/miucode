@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiuCode – Học Phát triển Web cùng mèo Miu | CSE122</title>
+<meta name="description" content="Nền tảng học tập tương tác CSE122 – Phát triển ứng dụng Web cơ bản: 9 chương, flashcard, mini game, kiểm tra và thi cuối khóa.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg-deco" aria-hidden="true">
+  <span class="blob blob-a"></span><span class="blob blob-b"></span><span class="blob blob-c"></span>
+  <span class="paw paw-1">🐾</span><span class="paw paw-2">✦</span><span class="paw paw-3">🐾</span><span class="paw paw-4">✿</span>
+</div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-cat" id="brandCat"></span>
+      <span class="brand-text">Miu<b>Code</b><small>CSE122 · Phát triển ứng dụng Web</small></span>
+    </a>
+    <nav class="mainnav" id="mainnav" aria-label="Điều hướng chính">
+      <a href="#/" data-nav="home">Trang chủ</a>
+      <a href="#/lo-trinh" data-nav="lo-trinh">Lộ trình</a>
+      <a href="#/bai-hoc" data-nav="bai-hoc">Bài học</a>
+      <a href="#/flashcard" data-nav="flashcard">Flashcard</a>
+      <a href="#/mini-game" data-nav="mini-game">Mini Game</a>
+      <a href="#/thi-cuoi-khoa" data-nav="thi-cuoi-khoa">Kiểm tra</a>
+      <a href="#/tai-lieu" data-nav="tai-lieu">Tài liệu</a>
+      <a href="#/ca-nhan" data-nav="ca-nhan">Cá nhân</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="soundBtn" title="Bật / tắt âm thanh" aria-label="Bật tắt âm thanh"></button>
+      <button class="icon-btn burger" id="burgerBtn" aria-label="Mở menu">☰</button>
+    </div>
+  </div>
+  <div class="top-progress"><div id="topProgressBar"></div></div>
+</header>
+
+<main id="app" class="app-main" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-cat" id="footerCat"></div>
+    <div>
+      <b>MiuCode</b> — học Web cơ bản thật vui, thật chắc. 🍊<br>
+      Nội dung bám sát giáo trình <a href="https://hieutachi.github.io/cse122-k67/slides/index.html" target="_blank" rel="noopener">CSE122 – Phát triển ứng dụng Web cơ bản</a> (K67, Khoa CNTT – Đại học Thủy Lợi).
+      Tiến độ của bạn được lưu ngay trên trình duyệt này.
+    </div>
+  </div>
+</footer>
+
+<div id="toastWrap" class="toast-wrap" aria-live="polite"></div>
+<canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
+<script src="js/utils.js"></script>
+<script src="js/blocks.js"></script>
+<script src="js/data/ch1.js"></script>
+<script src="js/data/ch2.js"></script>
+<script src="js/data/ch3.js"></script>
+<script src="js/data/ch4.js"></script>
+<script src="js/data/ch5.js"></script>
+<script src="js/data/ch6.js"></script>
+<script src="js/data/ch7.js"></script>
+<script src="js/data/ch8.js"></script>
+<script src="js/data/ch9.js"></script>
+<script src="js/data/gamedata.js"></script>
+<script src="js/data/exam.js"></script>
+<script src="js/data/appendix.js"></script>
+<script src="js/games.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
